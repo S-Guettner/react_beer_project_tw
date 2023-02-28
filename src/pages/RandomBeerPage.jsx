@@ -2,6 +2,7 @@ import backLogo from "../assets/images/Back.png"
 import { Link } from "react-router-dom";
 import {useState,useEffect} from 'react'
 import RandomBeerConstructor from "../components/RandomBeerConstructor";
+import HomeButton from "../components/Homebutton";
 
 const RandomBeer = () => {
 
@@ -30,7 +31,8 @@ const RandomBeer = () => {
                     contributedBy = {producer}
                 />
             </article>
-            <Link to="/"><img src={backLogo} alt="" /></Link>
+            <Link to="/"><img className="pl-20" src={backLogo} alt="" /></Link>
+            <HomeButton />
         </main>
 
 

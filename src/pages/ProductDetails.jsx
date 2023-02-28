@@ -33,7 +33,7 @@ const ProductDetails = () => {
             description = {productDetails.description}
             contributedBy = {producer}
             />
-            <Link to="/productoverview"><img src={backLogo} alt="Back" /></Link>
+            <Link to="/productoverview"><img className="pl-20" src={backLogo} alt="Back" /></Link>
             <HomeButton />
         </section>
         
