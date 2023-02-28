@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import logo from '../assets/images/logo.png'
+import logoButton from '../assets/images/Logo.png'
 
 const HomeButton = () => {
     return ( 
         <Link className="flex justify-center p-2 h-14 bg-[#ffca41]" to={"/"}>
-            <img src={logo} alt="" />
+            <img src={logoButton} alt="" />
         </Link>
      );
 }
