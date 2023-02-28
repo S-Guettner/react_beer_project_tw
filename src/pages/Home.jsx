@@ -1,6 +1,13 @@
+import AllBeers from "../components/AllBeers";
+import RandomBeers from "../components/RandomBeers";
+
+
 const Home = () => {
     return ( 
-        <h1>HOME</h1>
+        <main>
+            <AllBeers />
+            <RandomBeers />
+        </main>
      );
 }
  
