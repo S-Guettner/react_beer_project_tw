@@ -3,12 +3,12 @@ import img from "../assets/images/randombeer.png"
 
 const RandomBeers = () => {
     return ( 
-                <section>
+                <section className="p-2">
             <Link to="/randombeer">
-                <img src={img} alt="" />
-                <p>Random Beer</p>
+                <img className="mx-auto w-3/4" src={img} alt="" />
+                <p className="bg-yellow-400 w-3/4 mx-auto ">Random Beer</p>
             </Link>
-            <p></p>
+            
         </section>
      );
 }

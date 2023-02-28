@@ -3,12 +3,12 @@ import img from "../assets/images/allbeers.png"
 
 const AllBeers = () => {
     return ( 
-        <section>
+        <section className="p-2">
             <Link to="/productoverview">
-                <img src={img} alt="" />
-                <p>All Beers</p>
+                <img className="mx-auto w-3/4" src={img} alt="" />
+                <p className="bg-yellow-400 w-3/4 mx-auto">All Beers</p>
             </Link>
-            <p></p>
+            
         </section>
      );
 }
