@@ -21,7 +21,7 @@ const ProductOverview = () => {
         <section>
 
         {products && products.map((product) => {
-            console.log(product.contributed_by)
+            console.log(product._id)
             return (
                 <OverviewConstructor 
                 key={uuidv4()}
@@ -29,7 +29,7 @@ const ProductOverview = () => {
                 name={product.name}
                 tagline={product.tagline}
                 contributedBy={product.contributed_by}
-                /* link to detailsite */
+                id={product._id}
                 />
             )
         })}
