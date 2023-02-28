@@ -1,6 +1,9 @@
 import { useParams } from "react-router-dom";
 import { useEffect,useState } from "react";
 import DatailviewConstructor from "../components/DetailviewConstructor";
+import HomeButton from "../components/Homebutton";
+import { Link } from "react-router-dom";
+import backLogo from "../assets/images/Back.png"
 
 const ProductDetails = () => {
     
@@ -18,7 +21,6 @@ const ProductDetails = () => {
             setProducer((data.contributed_by).slice(0,10))
         })
     },[])
-    console.log(producer)
     return ( 
 
         <section>
@@ -30,8 +32,9 @@ const ProductDetails = () => {
             attenuationLevel = {productDetails.attenuation_level}
             description = {productDetails.description}
             contributedBy = {producer}
-            
             />
+            <Link to="/productoverview"><img src={backLogo} alt="Back" /></Link>
+            <HomeButton />
         </section>
         
      );
